@@ -8,8 +8,8 @@ import org.kissmod.kissMod.packet.handler.KissPacketHandler;
 public class KissPacketManager {
     public static final String KISS_C2S_PACKET_ID = KissModPlugin.id("kiss_entity_c2s_packet");
     public static final String KISS_S2C_PACKET_ID = KissModPlugin.id("kiss_entity_s2c_packet");
-    public static final String HANDSHAKE_C2S_PACKET_ID = KissModPlugin.id("handshake_c2s_packet");
-    public static final String HANDSHAKE_S2C_PACKET_ID = KissModPlugin.id("handshake_s2c_packet");
+    public static final String HANDSHAKE_C2S_PACKET_ID = KissModPlugin.id("handshake_c2s");
+    public static final String HANDSHAKE_S2C_PACKET_ID = KissModPlugin.id("handshake_s2c");
 
     public static void register() {
         KissPacketListener listener = new KissPacketListener();

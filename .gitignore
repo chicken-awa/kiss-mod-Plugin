@@ -3,5 +3,7 @@
 /.idea/
 /versions/
 /run/
+bin/
 .project
+.classpath
 .settings/
