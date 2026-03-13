@@ -12,7 +12,9 @@ public class HandshakePacketHandler implements PacketHandler {
     @Override
     public void handle(Player sender, ByteArrayDataInput buf) {
         ByteArrayDataOutput out = ByteStreams.newDataOutput();
-        sender.sendPluginMessage(KissModPlugin.getInstance(), KissPacketManager.HANDSHAKE_S2C_PACKET_ID, out.toByteArray());
+        if (sender.isOnline()) {
+            sender.sendPluginMessage(KissModPlugin.getInstance(),KissPacketManager.HANDSHAKE_S2C_PACKET_ID, out.toByteArray());
+        }
     }
 
     @Override
