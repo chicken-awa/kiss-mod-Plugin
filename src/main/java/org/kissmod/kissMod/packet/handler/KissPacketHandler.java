@@ -24,7 +24,7 @@ public class KissPacketHandler implements PacketHandler {
 
         UUID kissEntityUuid = buf.readUuid();
         Entity kissEntity = plugin.getServer().getEntity(kissEntityUuid);
-        double patVisibilityRadius = plugin.getServer().getViewDistance();
+        double patVisibilityRadius = plugin.getServer().getViewDistance() * 16.0;
 
         List<Player> nearbyPlayers = null;
         if (kissEntity != null) {
